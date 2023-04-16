@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 plt.close("all")
 plt.rcParams.update({'font.size': 22})
 
-# Make array of data, as in Table 3.1 (transposed here).
+# 表3.1のデータを作成（ここでは転置している）
 n = np.array([ 
 [8,     9,     9,     5,     4,     1,     1,     0,     0,     0],
 [3,     5,     8,     9,    14,    10,     3,     3,     0,     0],
@@ -17,7 +17,7 @@ n = np.array([
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
-plt.ion() # インタラクティブな描画を許可
+#plt.ion() # インタラクティブな描画を許可
 
 for r in range(0, 4):
     for c in range(0, 10):
@@ -34,9 +34,7 @@ plt.xlabel("$\\theta$")
 plt.ylabel("x")  
 plt.grid(True)
 plt.show()
-# NB. Indexing in Python runs from 0 to N-1, but examples in book
-# assumes indexing 1 to N. For consistency, the variable names 
-# used here assume 1 to N. 
-
-# END OF FILE
+# Pythonの配列におけるインデックスは0~N-1の値をとるが、本書における例は
+# 1~Nまでのインデックスを想定していることに注意。一貫性を保つため、ここでは変数名
+# は1~Nを想定している
 
